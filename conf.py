@@ -15,7 +15,7 @@ release = '2024'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-"sphinx.ext.extlinks",
+    "sphinx.ext.extlinks",
     "myst_parser",
     "sphinx.ext.todo",
     "sphinx.ext.autodoc",
@@ -24,7 +24,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_togglebutton",
     "sphinxcontrib.mermaid",
-    "sphinx_docsearch",
+    # "sphinx_docsearch",
 ]
 
 templates_path = ['_templates']
@@ -40,7 +40,6 @@ html_static_path = ['_static']
 html_baseurl = "https://falco.oluwatobi.dev"
 html_title = "falcoproject"
 
-
 # -- Shibuya theme options ---------------------------------------------------
 html_context = {
     "source_type": "github",
@@ -54,6 +53,7 @@ html_theme_options = {
     "twitter_url": "https://twitter.com/tobidegnon",
     "discussion_url": "https://github.com/orgs/falcopackages/discussions",
     "accent_color": "blue",
+    "announcement": "Looking for the legacy documentation? Visit <a href='https://legacy.falcoproject.com'>this link</a>",
     "globaltoc_expand_depth": 1,
     "nav_links": [
         {"title": "Home", "url": "index"},

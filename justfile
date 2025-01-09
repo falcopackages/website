@@ -9,5 +9,5 @@ _default:
 @install:
     uv pip install -r requirements.txt
 
-@serve:
-    uv run sphinx-autobuild . _build/html --port 8002
+@serve PORT="8002":
+    uv run sphinx-autobuild . _build/html --port {{ PORT }}
